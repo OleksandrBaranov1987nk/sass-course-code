@@ -1,0 +1,9 @@
+$color-primary: teal; // global scope
+
+body {
+  background-color: $color-primary;
+}
+
+p {
+  background-color: $color-primary;
+}
