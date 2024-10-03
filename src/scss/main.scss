@@ -21,9 +21,13 @@
 // @use "--examples--/lesson-07/badge";
 
 // Examples lesson 09
+// @use "base/fonts";
+// @use "components/alert";
 // @use "--examples--/lesson-09/extend";
 
 // Examples lesson 10
-// @use "--examples--/lesson-10/mixins"
+@use "base/fonts";
+// @use "components/button";
+@use "--examples--/lesson-10/mixins"
 
 
