@@ -11,7 +11,7 @@
 }
 
 .square-avatar {
-  @include avatar(100px);
+  @include avatar(100px,);
 }
 .circle-avatar {
   @include avatar(100px, $circle: true);
