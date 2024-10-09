@@ -1,0 +1,18 @@
+@use "mixins" as m;  /*импорти*/
+@use "functions" as f; /*импорти*/
+
+.title {
+  // font-size: 20px;
+  // font-style: normal;
+  // font-weight: 600;
+  // line-height: 28px; /* 140% */
+  // letter-spacing: 0.5px;
+  // text-align: center;
+
+  @include m.fonts(20px, 600, 28px, 0.5px, center); /*виклик із миксинів @mixin fonts */
+}
+
+.container {
+  // width: 1000px;
+  width: f.rem(1000px); /*импорт з @use "functions"*/
+}
