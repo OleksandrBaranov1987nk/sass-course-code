@@ -1,16 +1,1 @@
-@charset "UTF-8";
 /* == END ==*/
-/*импорти*/
-/*импорти*/
-.title {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: 0.03em;
-  text-align: center;
-  /*виклик із миксинів @mixin fonts */
-}
-
-.container {
-  width: 62.5rem; /*импорт з @use "functions"*/
-}
