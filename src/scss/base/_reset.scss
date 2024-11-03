@@ -13,6 +13,7 @@
     display: revert;
 }
 
+
 /* Preferred box-sizing value */
 *,
 *::before,
@@ -55,8 +56,12 @@ table {
 
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
 input, textarea {
-    -webkit-user-select: auto;
+    user-select: auto; /* Стандартное свойство */
+    -webkit-user-select: auto; /* Safari */
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: auto; /* Internet Explorer/Edge */
 }
+
 
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
@@ -94,7 +99,15 @@ meter {
     -webkit-user-modify: read-write;
     overflow-wrap: break-word;
     -webkit-line-break: after-white-space;
-    -webkit-user-select: auto;
+    input, textarea {
+        user-select: auto;
+        -webkit-user-select: auto; /* Для Safari */
+        -moz-user-select: auto; /* Для Firefox */
+        -ms-user-select: auto; /* Для Internet Explorer/Edge */
+    }
+    
+    line-break: auto; 
+    -webkit-line-break: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
